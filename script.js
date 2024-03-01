@@ -14,6 +14,11 @@ const genwords = (n) => {
 let numofwords;
 const getPara = () => {
   numofwords = Number(input.value);
+
+  if (input.value === "") {
+    return null;
+  }
+
   const para = document.createElement("p");
   let data = "";
   for (let i = 0; i < numofwords; ++i) {
